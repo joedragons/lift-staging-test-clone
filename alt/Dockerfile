@@ -1,6 +1,10 @@
 FROM ubuntu
 
+RUN top
+
 USER root
+
+RUN apt-get install python
 
 RUN apt install -y \
     curl \
