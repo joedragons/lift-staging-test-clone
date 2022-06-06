@@ -7,9 +7,9 @@ RUN apt install -y \
     jq \
     less
 
-WORKDIR /app/
-
 USER root
+
+WORKDIR /app/
 
 COPY file.txt .
 
