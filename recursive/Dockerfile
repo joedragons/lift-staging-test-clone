@@ -1,5 +1,7 @@
 FROM ubuntu
 
+RUN top
+
 RUN apt install -y \
     curl \
     jq \
@@ -10,3 +12,5 @@ WORKDIR /app/
 COPY file.txt .
 
 CMD [ "jq" ]
+
+USER root
